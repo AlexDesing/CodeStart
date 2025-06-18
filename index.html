@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeStart - Tu Aventura en la Programación</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="w-full">
+    <!-- <div class="code-bg" id="code-bg"></div> -->
+
+    <!-- Header -->
+    <header id="header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 glass-effect">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-white">
+                Code<span class="text-cyan-400">Start</span>
+            </a>
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="#curso" class="hover:text-cyan-400 transition-colors">El Curso</a>
+                <a href="#herramientas" class="hover:text-cyan-400 transition-colors">Herramientas</a>
+                <a href="#playground" class="hover:text-cyan-400 transition-colors">Playground</a>
+                <a href="#ejercicios" class="hover:text-cyan-400 transition-colors">Ejercicios</a>
+                <a href="#feedback" class="hover:text-cyan-400 transition-colors">Feedback</a>
+            </div>
+            <a href="#curso" class="hidden md:block bg-cyan-500 hover:bg-cyan-400 text-white font-bold py-2 px-4 rounded-lg transition-transform hover:scale-105">Empezar ahora</a>
+            <button id="mobile-menu-button" class="md:hidden text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+             <a href="#curso" class="block py-2 hover:text-cyan-400 transition-colors">El Curso</a>
+             <a href="#herramientas" class="block py-2 hover:text-cyan-400 transition-colors">Herramientas</a>
+             <a href="#playground" class="block py-2 hover:text-cyan-400 transition-colors">Playground</a>
+             <a href="#ejercicios" class="block py-2 hover:text-cyan-400 transition-colors">Ejercicios</a>
+             <a href="#feedback" class="block py-2 hover:text-cyan-400 transition-colors">Feedback</a>
+             <a href="#curso" class="block mt-4 w-full text-center bg-cyan-500 hover:bg-cyan-400 text-white font-bold py-2 px-4 rounded-lg transition-transform hover:scale-105">Empezar ahora</a>
+        </div>
+    </header>
+
+    <!-- This div wraps the main content that can be hidden -->
+    <div id="main-content">
+        <main class="pt-20">
+            <section id="home" class="min-h-screen flex items-center justify-center hero-gradient-bg px-4">
+                <div class="text-center">
+                    <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-4">
+                        Convierte Ideas en Realidad a través del <span class="text-cyan-400">Código</span>
+                    </h1>
+                    <p class="text-lg md:text-xl text-slate-300 max-w-3xl mx-auto mb-8">
+                        El viaje para ser programador empieza con un solo paso. Aquí encontrarás todo lo que necesitas para empezar, desde cero hasta convertirte en un desarrollador competente.
+                    </p>
+                    <a href="#curso" class="bg-cyan-500 text-white font-bold py-3 px-8 rounded-full text-lg transition-all duration-300 hover:scale-105 btn-glow">
+                        Inicia tu Aventura
+                    </a>
+                </div>
+            </section>
+            
+            <section id="curso" class="py-20 px-4">
+                <div class="container mx-auto">
+                    <div class="text-center mb-16">
+                        <h2 class="text-3xl md:text-4xl font-bold text-white">De <span class="text-purple-400">Cero</span> a <span class="text-cyan-400">Programador</span></h2>
+                        <p class="text-slate-400 mt-4 max-w-2xl mx-auto">Nuestro curso está diseñado para llevarte de la mano en cada etapa de tu aprendizaje.</p>
+                    </div>
+                     <div class="mb-20">
+                        <h3 class="text-2xl font-bold text-center text-white mb-10">La Ruta del Programador</h3>
+                        <div class="relative w-full">
+                            <div class="hidden md:block absolute top-1/2 left-0 w-full h-1 bg-slate-700 -translate-y-1/2"></div>
+                            <div class="relative flex justify-between items-center">
+                                <div class="text-center z-10 w-1/5"><div class="mx-auto bg-purple-500 rounded-full h-10 w-10 flex items-center justify-center border-4 border-slate-700 text-white text-lg font-bold">1</div><p class="mt-2 text-sm md:text-base">Curiosidad</p></div>
+                                <div class="text-center z-10 w-1/5"><div class="mx-auto bg-purple-500 rounded-full h-10 w-10 flex items-center justify-center border-4 border-slate-700 text-white text-lg font-bold">2</div><p class="mt-2 text-sm md:text-base">Fundamentos</p></div>
+                                <div class="text-center z-10 w-1/5"><div class="mx-auto bg-purple-500 rounded-full h-10 w-10 flex items-center justify-center border-4 border-slate-700 text-white text-lg font-bold">3</div><p class="mt-2 text-sm md:text-base">Práctica</p></div>
+                                <div class="text-center z-10 w-1/5"><div class="mx-auto bg-cyan-500 rounded-full h-10 w-10 flex items-center justify-center border-4 border-slate-700 text-white text-lg font-bold">4</div><p class="mt-2 text-sm md:text-base">Proyectos</p></div>
+                                <div class="text-center z-10 w-1/5"><div class="mx-auto bg-cyan-500 rounded-full h-10 w-10 flex items-center justify-center border-4 border-slate-700 text-white text-lg font-bold">5</div><p class="mt-2 text-sm md:text-base">Especialización</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <div data-module="1" class="module-card glass-effect rounded-xl p-6 border-l-4 border-cyan-400 hover:shadow-cyan-400/20 hover:shadow-lg transition-all duration-300 hover:-translate-y-2 cursor-pointer"><h3 class="text-xl font-bold text-white mb-2">Módulo 1: Los Primeros Pasos</h3><p class="text-slate-300">¿La programación es para mí? Descubre tu potencial, entiende la lógica y prepara tu mente.</p></div>
+                        <div data-module="2" class="module-card glass-effect rounded-xl p-6 border-l-4 border-cyan-400 hover:shadow-cyan-400/20 hover:shadow-lg transition-all duration-300 hover:-translate-y-2 cursor-pointer"><h3 class="text-xl font-bold text-white mb-2">Módulo 2: Herramientas del Oficio</h3><p class="text-slate-300">Configura tu entorno. Conoce los editores de código, la terminal y el control de versiones.</p></div>
+                        <div data-module="3" class="module-card glass-effect rounded-xl p-6 border-l-4 border-cyan-400 hover:shadow-cyan-400/20 hover:shadow-lg transition-all duration-300 hover:-translate-y-2 cursor-pointer"><h3 class="text-xl font-bold text-white mb-2">Módulo 3: Fundamentos de la Web</h3><p class="text-slate-300">Aprende a construir la estructura y el estilo de las páginas web with HTML5 y CSS3.</p></div>
+                        <div data-module="4" class="module-card glass-effect rounded-xl p-6 border-l-4 border-purple-400 hover:shadow-purple-400/20 hover:shadow-lg transition-all duration-300 hover:-translate-y-2 cursor-pointer"><h3 class="text-xl font-bold text-white mb-2">Módulo 4: El Poder de JavaScript</h3><p class="text-slate-300">Dale vida a tus sitios web. Aprende variables, funciones, eventos y manipulación del DOM.</p></div>
+                        <div data-module="5" class="module-card glass-effect rounded-xl p-6 border-l-4 border-purple-400 hover:shadow-purple-400/20 hover:shadow-lg transition-all duration-300 hover:-translate-y-2 cursor-pointer"><h3 class="text-xl font-bold text-white mb-2">Módulo 5: Lenguajes para Empezar</h3><p class="text-slate-300">Exploramos Python y JavaScript, dos de los lenguajes más amigables y demandados.</p></div>
+                        <div data-module="6" class="module-card glass-effect rounded-xl p-6 border-l-4 border-purple-400 hover:shadow-purple-400/20 hover:shadow-lg transition-all duration-300 hover:-translate-y-2 cursor-pointer"><h3 class="text-xl font-bold text-white mb-2">Módulo 6: Tu Primer Proyecto</h3><p class="text-slate-300">Aplica todo lo aprendido para crear un proyecto real y añadirlo a tu portafolio.</p></div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="herramientas" class="py-20 px-4 bg-[#0e1222]">
+                <div class="container mx-auto">
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl md:text-4xl font-bold text-white">Tu Caja de <span class="text-cyan-400">Herramientas</span> Digital</h2>
+                        <p class="text-slate-400 mt-4 max-w-2xl mx-auto">Un buen programador conoce sus herramientas. Estos son los editores de código más populares.</p>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <div class="glass-effect rounded-lg p-6 text-center flex flex-col items-center">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg" alt="VS Code Logo" class="h-16 w-16 mb-4">
+                            <h3 class="text-2xl font-bold text-white mb-2">Visual Studio Code</h3>
+                            <p class="text-slate-300">El estándar de la industria. Gratuito, de código abierto y con un ecosistema masivo de extensiones para cualquier necesidad.</p>
+                        </div>
+                        <div class="glass-effect rounded-lg p-6 text-center flex flex-col items-center">
+                            <img src="media/sublime-text-icon.png" alt="Sublime Text Logo" class="h-16 w-16 mb-4">
+                            <h3 class="text-2xl font-bold text-white mb-2">Sublime Text</h3>
+                            <p class="text-slate-300">Conocido por su velocidad y eficiencia. Es ligero, rápido y altamente personalizable. Ideal para quienes aman el minimalismo.</p>
+                        </div>
+                        <div class="glass-effect rounded-lg p-6 text-center flex flex-col items-center">
+                            <img src="https://replit.com/public/images/logo-sm-dark.png" alt="Replit Logo" class="h-16 w-16 mb-4 rounded-full" onerror="this.src='https://placehold.co/64x64/0a0e1a/ffffff?text=R'">
+                            <h3 class="text-2xl font-bold text-white mb-2">Replit</h3>
+                            <p class="text-slate-300">Programa desde tu navegador. No requiere instalación y es perfecto para aprender, colaborar y prototipar rápidamente.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="playground" class="py-20 px-4">
+                <div class="container mx-auto">
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl md:text-4xl font-bold text-white">Prueba tu <span class="text-purple-400">Código</span> Aquí</h2>
+                        <p class="text-slate-400 mt-4 max-w-2xl mx-auto">No necesitas instalar nada. Escribe, ejecuta y ve los resultados al instante.</p>
+                    </div>
+                    <div class="max-w-4xl mx-auto glass-effect rounded-xl overflow-hidden border border-slate-700">
+                        <div class="bg-slate-900 p-3 flex justify-between items-center rounded-t-xl">
+                            <div class="flex items-center space-x-2"><span class="h-3 w-3 bg-red-500 rounded-full"></span><span class="h-3 w-3 bg-yellow-500 rounded-full"></span><span class="h-3 w-3 bg-green-500 rounded-full"></span></div>
+                            <select id="language-selector" class="bg-slate-700 text-white text-sm rounded p-1 border-0 focus:ring-0">
+                                <option value="html">HTML/CSS</option>
+                                <option value="javascript">JavaScript</option>
+                                <option value="python">Python</option>
+                            </select>
+                        </div>
+                        <textarea id="code-editor" class="w-full h-80 bg-[#12182c] p-4 text-cyan-300 font-mono resize-none focus:outline-none" spellcheck="false"></textarea>
+                    </div>
+                    <div class="max-w-4xl mx-auto mt-4 text-center">
+                        <button id="run-code-button" class="bg-purple-600 hover:bg-purple-500 text-white font-bold py-3 px-8 rounded-lg transition-transform hover:scale-105 inline-flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                            Ejecutar Código
+                        </button>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="ejercicios" class="py-20 px-4 bg-[#0e1222]">
+                <div class="container mx-auto">
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl md:text-4xl font-bold text-white">Pon a Prueba tus <span class="text-cyan-400">Habilidades</span></h2>
+                        <p class="text-slate-400 mt-4 max-w-2xl mx-auto">La práctica hace al maestro. Resuelve estos ejercicios para afianzar lo que has aprendido.</p>
+                    </div>
+                    <div class="max-w-4xl mx-auto">
+                        <div class="glass-effect rounded-lg p-6 mb-6">
+                            <h3 class="font-bold text-lg text-cyan-400 mb-2">Ejercicio 1: Tu Primera Página Web</h3>
+                            <p class="text-slate-300 mb-4">Usa HTML para crear una página simple que contenga un encabezado `<h1>` con tu nombre y un párrafo `<p>` que describa uno de tus hobbies.</p>
+                            <button data-exercise="1" class="solution-button bg-slate-700 hover:bg-slate-600 text-white py-2 px-4 rounded-lg text-sm">Ver Solución</button>
+                        </div>
+                        <div class="glass-effect rounded-lg p-6 mb-6">
+                            <h3 class="font-bold text-lg text-cyan-400 mb-2">Ejercicio 2: Estiliza tu Botón</h3>
+                            <p class="text-slate-300 mb-4">Usando CSS, crea un botón que tenga un fondo de color púrpura, texto blanco, esquinas redondeadas y que cambie de color cuando pases el mouse sobre él.</p>
+                            <button data-exercise="2" class="solution-button bg-slate-700 hover:bg-slate-600 text-white py-2 px-4 rounded-lg text-sm">Ver Solución</button>
+                        </div>
+                        <div class="glass-effect rounded-lg p-6">
+                            <h3 class="font-bold text-lg text-cyan-400 mb-2">Ejercicio 3: Saludo Interactivo</h3>
+                            <p class="text-slate-300 mb-4">Con JavaScript, haz que al hacer clic en un botón, aparezca un mensaje de "¡Hola, Programador!" en la consola del navegador.</p>
+                            <button data-exercise="3" class="solution-button bg-slate-700 hover:bg-slate-600 text-white py-2 px-4 rounded-lg text-sm">Ver Solución</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="feedback" class="py-20 px-4">
+                 <div class="container mx-auto max-w-2xl">
+                    <div class="text-center mb-12">
+                        <h2 class="text-3xl md:text-4xl font-bold text-white">Ayúdanos a <span class="text-purple-400">Mejorar</span></h2>
+                        <p class="text-slate-400 mt-4">Tus ideas y sugerencias son importantes para nosotros. ¡Déjanos un comentario!</p>
+                    </div>
+                    <form id="feedback-form" class="glass-effect rounded-xl p-8">
+                        <div class="mb-6">
+                            <label for="name" class="block mb-2 text-sm font-medium text-slate-300">Tu Nombre (Opcional)</label>
+                            <input type="text" id="name" class="bg-slate-700 border border-slate-600 text-white text-sm rounded-lg focus:ring-cyan-500 focus:border-cyan-500 block w-full p-2.5" placeholder="Ada Lovelace">
+                        </div>
+                         <div class="mb-6">
+                            <label for="feedback_text" class="block mb-2 text-sm font-medium text-slate-300">Tu Mensaje</label>
+                            <textarea id="feedback_text" rows="4" class="bg-slate-700 border border-slate-600 text-white text-sm rounded-lg focus:ring-cyan-500 focus:border-cyan-500 block w-full p-2.5" placeholder="Me encantaría ver un curso sobre..." required></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-cyan-500 hover:bg-cyan-400 text-white font-bold py-3 px-4 rounded-lg transition-transform hover:scale-105">Enviar Feedback</button>
+                    </form>
+                 </div>
+            </section>
+        </main>
+        
+        <footer class="bg-[#0e1222] py-8 px-4">
+            <div class="container mx-auto text-center text-slate-400">
+                <p>&copy; 2024 WalexDev. Todos los derechos reservados.</p>
+                <p>Hecho con <span class="text-red-500">&hearts;</span> para la comunidad de programadores.</p>
+            </div>
+        </footer>
+    </div>
+    
+    <!-- This div is for the dedicated lesson page, hidden by default -->
+    <div id="lesson-page" class="hidden">
+        <div class="container mx-auto max-w-4xl px-4 pt-28 pb-16 sm:pt-32 sm:pb-24">
+            <button id="back-to-course" class="inline-flex items-center gap-2 text-cyan-400 hover:text-cyan-300 mb-8">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg>
+                Volver al Curso
+            </button>
+            <div id="lesson-content-area" class="space-y-8">
+                <!-- Content will be injected here by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal for Course Modules -->
+    <div id="module-modal" class="modal fixed inset-0 z-50 flex items-center justify-center p-4 bg-black bg-opacity-70 invisible opacity-0">
+        <div id="modal-content-module" class="modal-content glass-effect rounded-xl max-w-2xl w-full mx-auto p-8 relative transform scale-95">
+            <button id="close-modal-module" class="absolute top-4 right-4 text-slate-400 hover:text-white transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+            </button>
+            <h3 id="modal-title" class="text-2xl font-bold text-cyan-400 mb-4"></h3>
+            <p id="modal-intro" class="text-slate-300 mb-6"></p>
+            <div id="modal-topics" class="space-y-3 mb-8"></div>
+            <button id="go-to-lesson" class="w-full bg-purple-600 hover:bg-purple-500 text-white font-bold py-3 px-4 rounded-lg transition-transform hover:scale-105">
+                Ir a la Lección Completa
+            </button>
+        </div>
+    </div>
+    
+    <!-- Modal for Exercise Solutions -->
+    <div id="exercise-modal" class="modal fixed inset-0 z-50 flex items-center justify-center p-4 bg-black bg-opacity-70 invisible opacity-0">
+        <div id="modal-content-exercise" class="modal-content glass-effect rounded-xl max-w-2xl w-full mx-auto p-8 relative transform scale-95">
+            <button id="close-modal-exercise" class="absolute top-4 right-4 text-slate-400 hover:text-white transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+            </button>
+            <h3 id="exercise-modal-title" class="text-2xl font-bold text-cyan-400 mb-4"></h3>
+            <div id="exercise-modal-content"></div>
+        </div>
+    </div>
+    
+    <!-- NEW MODAL FOR BROWSER PREVIEW -->
+    <div id="browser-modal" class="modal fixed inset-0 z-[60] flex items-center justify-center p-4 bg-black bg-opacity-70 invisible opacity-0">
+        <div id="modal-content-browser" class="modal-content glass-effect rounded-xl max-w-3xl w-full mx-auto transform scale-95">
+            <div class="bg-slate-900 p-3 flex justify-between items-center rounded-t-xl">
+                <div class="flex items-center space-x-2">
+                   <span class="h-3 w-3 bg-red-500 rounded-full"></span><span class="h-3 w-3 bg-yellow-500 rounded-full"></span><span class="h-3 w-3 bg-green-500 rounded-full"></span>
+                </div>
+                <p class="text-sm text-slate-400">Vista Previa</p>
+                <button id="close-browser-modal" class="text-slate-400 hover:text-white transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+                </button>
+            </div>
+            <iframe id="browser-iframe"></iframe>
+        </div>
+    </div>
+
+    <!-- NEW MODAL FOR CONSOLE OUTPUT -->
+    <div id="console-modal" class="modal fixed inset-0 z-[60] flex items-center justify-center p-4 bg-black bg-opacity-70 invisible opacity-0">
+        <div id="modal-content-console" class="modal-content glass-effect rounded-xl max-w-3xl w-full mx-auto p-6 transform scale-95">
+            <div class="flex justify-between items-center mb-4">
+                <h3 class="text-2xl font-bold text-cyan-400">Salida de la Consola</h3>
+                <button id="close-console-modal" class="text-slate-400 hover:text-white transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>
+                </button>
+            </div>
+            <div id="console-output" class="font-mono"></div>
+        </div>
+    </div>
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>

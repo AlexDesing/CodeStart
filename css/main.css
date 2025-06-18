@@ -1,0 +1,131 @@
+/* Estilos personalizados extraídos de index.html */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0a0e1a;
+    color: #e0e0e0;
+    margin-left: 0;
+    margin-right: 0;
+}
+.font-mono {
+    font-family: 'Roboto Mono', monospace;
+}
+.glass-effect {
+    background: rgba(18, 24, 49, 0.6);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.hero-gradient-bg {
+    background: radial-gradient(circle at top, rgba(13, 37, 63, 0.8), transparent 70%), 
+                radial-gradient(circle at right, rgba(66, 17, 124, 0.5), transparent 70%), 
+                radial-gradient(circle at bottom left, rgba(20, 100, 110, 0.6), transparent 70%);
+    background-color: #0a0e1a;
+}
+.btn-glow {
+    box-shadow: 0 0 5px #2dd4bf, 0 0 15px #2dd4bf, 0 0 25px #2dd4bf;
+    transition: all 0.3s ease;
+}
+.btn-glow:hover {
+    box-shadow: 0 0 10px #2dd4bf, 0 0 25px #2dd4bf, 0 0 50px #2dd4bf;
+}
+.modal {
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.modal-content {
+    transition: transform 0.3s ease;
+}
+.lesson-code-block, .solution-code-block {
+    background-color: #1e293b;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    overflow-x: auto;
+    border: 1px solid #334155;
+}
+.lesson-analogy {
+    border-left: 4px solid #8b5cf6;
+    padding-left: 1rem;
+    margin: 1.5rem 0;
+    font-style: italic;
+    color: #cbd5e1;
+}
+#browser-iframe {
+    width: 100%;
+    height: 400px;
+    background-color: white;
+    border: none;
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+#console-output {
+    background-color: #12182c;
+    color: #e0e0e0;
+    height: 400px;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    overflow-y: auto;
+    border: 1px solid #334155;
+}
+#console-output .log-line {
+    white-space: pre-wrap;
+    word-break: break-all;
+}
+#console-output .log-line.error {
+    color: #f87171;
+}
+#console-output .log-line:before {
+    content: '> ';
+    color: #60a5fa;
+}
+#lesson-content-area {
+    min-height: 400px;
+    max-width: 100%;
+    overflow: visible;
+    padding-bottom: 2rem;
+}
+
+/* Limitar el ancho máximo y centrar el contenido principal */
+#main-content > main, #main-content > footer, #lesson-page > div.container {
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+/* Ajustar los contenedores internos para que no ocupen el 100% */
+.container {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+/* Ajustar las secciones para que no se vean tan extendidas */
+section, footer {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (max-width: 768px) {
+    #main-content > main, #main-content > footer, #lesson-page > div.container, .container, section, footer {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        max-width: 100%;
+    }
+}
+
+/* Eliminar fondo animado de código flotante */
+.code-bg {
+    display: none !important;
+}
+
+body > .code-bg {
+    /* Para asegurar que el fondo esté detrás del contenido */
+    z-index: 0;
+}
+#main-content, #lesson-page, header, footer, .modal {
+    position: relative;
+    z-index: 1;
+}

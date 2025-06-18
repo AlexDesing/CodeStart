@@ -1,0 +1,20 @@
+{
+  "title": "Módulo 1: Los Primeros Pasos",
+  "intro": "Aquí comienza tu viaje. La programación es menos sobre ser un genio y más sobre aprender a pensar de una manera estructurada y resolver problemas paso a paso.",
+  "topics": [
+    "¿Qué es la programación y el pensamiento computacional?",
+    "Lógica y algoritmos como recetas para la computadora.",
+    "¿Cómo saber si la programación es para ti?",
+    "Errores comunes y cómo superarlos"
+  ],
+  "lesson": {
+    "title": "Lección 1: ¿Tengo lo que se necesita?",
+    "objectives": [
+      "Entender qué es el pensamiento computacional.",
+      "Evaluar si disfrutas resolviendo problemas de forma lógica.",
+      "Desmitificar la imagen del 'programador genio'.",
+      "Aprender a manejar la frustración y los errores"
+    ],
+    "content": "<h4 class=\"text-xl font-bold text-white mt-8 mb-4\">1. ¿Qué es programar?</h4><p class=\"text-slate-300 mb-4\">Programar es decirle a una computadora, paso a paso, qué hacer. Es como escribir instrucciones para un robot. No necesitas ser un genio, solo aprender a pensar de forma lógica y ordenada.</p><blockquote class=\"lesson-analogy\"><strong>Analogía:</strong> Si quieres que un robot te prepare un sándwich, no puedes decirle 'hazme un sándwich'. Debes decirle: '1. Ve a la cocina. 2. Abre la nevera. 3. Saca el pan...'. Eso es programar.</blockquote><h4 class=\"text-xl font-bold text-white mt-8 mb-4\">2. Pensamiento Computacional</h4><p class=\"text-slate-300 mb-4\">No se trata de matemáticas difíciles, sino de aprender a:</p><ul class=\"list-disc list-inside space-y-2 text-slate-300\"><li><strong>Descomponer:</strong> Dividir un problema grande en partes pequeñas.</li><li><strong>Reconocer patrones:</strong> Ver qué se repite para no reinventar la rueda.</li><li><strong>Abstraer:</strong> Ignorar detalles que no importan para enfocarte en lo esencial.</li><li><strong>Crear algoritmos:</strong> Escribir los pasos para resolver cada parte.</li></ul><h4 class=\"text-xl font-bold text-white mt-8 mb-4\">3. ¿Es esto para mí?</h4><p class=\"text-slate-300 mb-4\">¿Te gustan los rompecabezas, los juegos de lógica o entender cómo funcionan las cosas? ¿Te gusta crear y resolver problemas? Si respondes sí, ¡puedes ser programador!</p><p class=\"text-slate-300 mb-4\">No necesitas ser bueno en matemáticas ni tener experiencia previa. Solo curiosidad y ganas de aprender.</p><h4 class=\"text-xl font-bold text-white mt-8 mb-4\">4. Errores y frustración</h4><p class=\"text-slate-300 mb-4\">Todos los programadores cometen errores. Lo importante es aprender a leer los mensajes de error, buscar soluciones y no rendirse. La paciencia y la práctica son clave. ¡Cada error es una oportunidad para aprender!</p>"
+  }
+}
